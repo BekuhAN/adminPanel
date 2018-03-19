@@ -13,7 +13,9 @@ body
 .header-menu
 	justify-content: space-between
 	background: $bg-dark
-	padding: 15px
+	padding: 0 15px
+	align-items: center
+	height: 5vh
 	a
 		color: #fff
 		text-decoration: none
@@ -22,18 +24,30 @@ body
 			color: lighten($main-color, 20%)
 	i
 		padding-right: 10px
+		font-size: 21px
 	.exit-btn
 		text-align: center
 
 .main-menu
 	background: $bg-light
-	height: calc(100vh - 54px)
-	padding: 0
+	height: 95vh
+	padding: 15px 0 0
 	ul
 		list-style: none
 		padding: 0
 		li
-			padding: 10px 20px
+			a
+				display: block
+				padding: 10px 20px
+				color: #333
+				text-decoration: none
+				&:hover
+					i
+						color: $main-color
+				i
+					font-size: 18px
+					padding-right: 10px
+					transition: .2s
 
 /*==========  user style  ==========*/
 

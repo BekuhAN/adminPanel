@@ -4895,7 +4895,9 @@ body {
 .header-menu {
   justify-content: space-between;
   background: #343a40;
-  padding: 15px;
+  padding: 0 15px;
+  align-items: center;
+  height: 5vh;
 }
 
 .header-menu a {
@@ -4910,6 +4912,7 @@ body {
 
 .header-menu i {
   padding-right: 10px;
+  font-size: 21px;
 }
 
 .header-menu .exit-btn {
@@ -4918,8 +4921,8 @@ body {
 
 .main-menu {
   background: #f8f9fa;
-  height: calc(100vh - 54px);
-  padding: 0;
+  height: 95vh;
+  padding: 15px 0 0;
 }
 
 .main-menu ul {
@@ -4927,8 +4930,21 @@ body {
   padding: 0;
 }
 
-.main-menu ul li {
+.main-menu ul li a {
+  display: block;
   padding: 10px 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.main-menu ul li a:hover i {
+  color: #007bff;
+}
+
+.main-menu ul li a i {
+  font-size: 18px;
+  padding-right: 10px;
+  transition: .2s;
 }
 
 /*==========  user style  ==========*/

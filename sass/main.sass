@@ -4,6 +4,37 @@
 
 /*==========  user style  ==========*/
 
+*
+	box-sizing: border-box
+	
+body
+	font-family: roboto-example, sans-serif
+
+.header-menu
+	justify-content: space-between
+	background: $bg-dark
+	padding: 15px
+	a
+		color: #fff
+		text-decoration: none
+		transition: .2s
+		&:hover
+			color: lighten($main-color, 20%)
+	i
+		padding-right: 10px
+	.exit-btn
+		text-align: center
+
+.main-menu
+	background: $bg-light
+	height: calc(100vh - 54px)
+	padding: 0
+	ul
+		list-style: none
+		padding: 0
+		li
+			padding: 10px 20px
+
 /*==========  user style  ==========*/
 
 @import "media" // Always at the end

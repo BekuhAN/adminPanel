@@ -6,16 +6,19 @@
 
 *
 	box-sizing: border-box
+	&:focus
+		outline: none
 	
 body
 	font-family: roboto-example, sans-serif
+	color: #333
 
 .header-menu
 	justify-content: space-between
 	background: $bg-dark
 	padding: 0 15px
 	align-items: center
-	height: 5vh
+	height: 7vh
 	a
 		color: #fff
 		text-decoration: none
@@ -30,7 +33,7 @@ body
 
 .main-menu
 	background: $bg-light
-	height: 95vh
+	height: 93vh
 	padding: 15px 0 0
 	ul
 		list-style: none
@@ -41,13 +44,87 @@ body
 				padding: 10px 20px
 				color: #333
 				text-decoration: none
+				transition: .2s
 				&:hover
+					background: darken($bg-light, 5%)
 					i
 						color: $main-color
 				i
 					font-size: 18px
 					padding-right: 10px
 					transition: .2s
+
+main
+	padding: 30px 0
+	.task-bar
+		display: flex
+		height: 40px
+		margin-left: 10px
+		&-item
+			margin-right: 10px
+	.btn
+		display: flex
+		align-items: center
+		padding: 0 20px
+		border-radius: 3px
+		transition: .2s
+		background: lighten($bg-dark, 5%)
+		color: #fff
+		&:hover
+			background: lighten($bg-dark, 20%)
+			cursor: pointer
+	select[name=category]
+		padding: 0 20px
+		border-radius: 3px
+		border-color: #ddd
+		color: #444
+
+table
+	width: 100%
+	margin-left: 10px
+	margin-top: 30px
+
+.table-news
+	td
+		padding: 15px 0
+	th
+		background: $bg-light
+	tr
+		height: 40px
+		td:first-child
+			text-align: center
+	.table-item-select
+		width: 40px
+		text-align: center
+	.table-item-category
+		width: 180px
+	.table-item-date
+		width: 100px
+	.table-item-id
+		width: 80px
+	.table-item-action
+		width: 120px
+	td.table-item-action
+		display: flex
+		justify-content: center
+		align-items: center
+		.action-btn
+			display: flex
+			width: 30px
+			height: 30px
+			justify-content: center
+			align-items: center
+			background: lighten($bg-dark, 5%)
+			color: #fff
+			border-radius: 3px	
+			margin-right: 10px
+			&:hover
+				background: lighten($bg-dark, 20%)
+				cursor: pointer
+
+		
+
+
 
 /*==========  user style  ==========*/
 

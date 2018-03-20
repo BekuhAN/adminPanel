@@ -30,7 +30,57 @@
 			</nav>
 			
 			<main class="col-10">
-				
+				<div class="task-bar">
+					<span class="task-bar-item btn btn-add">Добавить новую</span>
+					<span class="task-bar-item btn btn-del">Удалить выбранные</span>
+					<!-- <span class="task-bar-item news-count">Все ( 658 )</span> -->
+					<select class="task-bar-item" name="category" id="">
+						<option value="1">Все</option>
+						<option value="2">Главные новости</option>
+						<option value="3">Анонсы</option>
+					</select>
+				</div>
+
+				<table class="table-news">
+					<tr>
+						<th class="table-item-select"><input type="checkbox"></th>
+						<th class="table-item-title">Заголовок</th>
+						<th class="table-item-category">Категория</th>
+						<th class="table-item-date">Дата</th>
+						<th class="table-item-id">ID</th>
+						<th class="table-item-action">Действие</th>
+					</tr>
+					<tr>
+						<td class="table-item-select"><input type="checkbox"></td>
+						<td class="table-item-title"><span class="news-title">Составлен рейтинг самых дешевых и самых дорогих городов мира для туризма</span></td>
+						<td class="table-item-category">Главные новости</td>
+						<td class="table-item-date">01.01.2018</td>
+						<td class="table-item-id">1322</td>
+						<td class="table-item-action">
+							<span class="action-btn"><i class="fa fa-pencil"></i></span><span class="action-btn"><i class="fa fa-trash-o"></i></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="table-item-select"><input type="checkbox"></td>
+						<td class="table-item-title"><span class="news-title">«Ласточка» начнет ездить по маршруту Краснодар — Кисловодск</span></td>
+						<td class="table-item-category">Анонсы</td>
+						<td class="table-item-date">01.01.2018</td>
+						<td class="table-item-id">1322</td>
+						<td class="table-item-action">
+							<span class="action-btn"><i class="fa fa-pencil"></i></span><span class="action-btn"><i class="fa fa-trash-o"></i></span>
+						</td>
+					</tr>
+					<tr>
+						<td class="table-item-select"><input type="checkbox"></td>
+						<td class="table-item-title"><span class="news-title">В Краснодаре прошла юбилейная X Международная конференция «Твердовские чтения»</span></td>
+						<td class="table-item-category">Общество</td>
+						<td class="table-item-date">01.01.2018</td>
+						<td class="table-item-id">1322</td>
+						<td class="table-item-action">
+							<span class="action-btn"><i class="fa fa-pencil"></i></span><span class="action-btn"><i class="fa fa-trash-o"></i></span>
+						</td>
+					</tr>
+				</table>
 			</main>			
 		</div>
 		

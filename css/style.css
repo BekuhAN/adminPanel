@@ -4888,8 +4888,13 @@ html {
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 body {
   font-family: roboto-example, sans-serif;
+  color: #333;
 }
 
 .header-menu {
@@ -4897,7 +4902,7 @@ body {
   background: #343a40;
   padding: 0 15px;
   align-items: center;
-  height: 5vh;
+  height: 7vh;
 }
 
 .header-menu a {
@@ -4921,7 +4926,7 @@ body {
 
 .main-menu {
   background: #f8f9fa;
-  height: 95vh;
+  height: 93vh;
   padding: 15px 0 0;
 }
 
@@ -4935,6 +4940,11 @@ body {
   padding: 10px 20px;
   color: #333;
   text-decoration: none;
+  transition: .2s;
+}
+
+.main-menu ul li a:hover {
+  background: #e9ecef;
 }
 
 .main-menu ul li a:hover i {
@@ -4945,6 +4955,108 @@ body {
   font-size: 18px;
   padding-right: 10px;
   transition: .2s;
+}
+
+main {
+  padding: 30px 0;
+}
+
+main .task-bar {
+  display: flex;
+  height: 40px;
+  margin-left: 10px;
+}
+
+main .task-bar-item {
+  margin-right: 10px;
+}
+
+main .btn {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 3px;
+  transition: .2s;
+  background: #3f474e;
+  color: #fff;
+}
+
+main .btn:hover {
+  background: #626d78;
+  cursor: pointer;
+}
+
+main select[name=category] {
+  padding: 0 20px;
+  border-radius: 3px;
+  border-color: #ddd;
+  color: #444;
+}
+
+table {
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.table-news td {
+  padding: 15px 0;
+}
+
+.table-news th {
+  background: #f8f9fa;
+}
+
+.table-news tr {
+  height: 40px;
+}
+
+.table-news tr td:first-child {
+  text-align: center;
+}
+
+.table-news .table-item-select {
+  width: 40px;
+  text-align: center;
+}
+
+.table-news .table-item-category {
+  width: 180px;
+}
+
+.table-news .table-item-date {
+  width: 100px;
+}
+
+.table-news .table-item-id {
+  width: 80px;
+}
+
+.table-news .table-item-action {
+  width: 120px;
+}
+
+.table-news td.table-item-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-news td.table-item-action .action-btn {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background: #3f474e;
+  color: #fff;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.table-news td.table-item-action .action-btn:hover {
+  background: #626d78;
+  cursor: pointer;
 }
 
 /*==========  user style  ==========*/

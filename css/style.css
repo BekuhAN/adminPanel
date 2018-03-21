@@ -4961,17 +4961,20 @@ main {
   padding: 30px 0;
 }
 
+main .row {
+  padding: 0 15px;
+}
+
 main .task-bar {
   display: flex;
   height: 40px;
-  margin-left: 10px;
 }
 
 main .task-bar-item {
   margin-right: 10px;
 }
 
-main .btn {
+main .task-bar .btn {
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -4981,16 +4984,38 @@ main .btn {
   color: #fff;
 }
 
-main .btn:hover {
+main .task-bar .btn:hover {
   background: #626d78;
+  color: #fff;
   cursor: pointer;
 }
 
-main select[name=category] {
+main select {
   padding: 0 20px;
   border-radius: 3px;
-  border-color: #ddd;
+  border-color: #ccc;
   color: #444;
+}
+
+main select[name=add-news-category] {
+  width: 100%;
+  height: 40px;
+}
+
+main input, main textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+main textarea {
+  height: 60vh;
+}
+
+main label {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 table {
@@ -5004,11 +5029,15 @@ table {
 }
 
 .table-news th {
-  background: #f8f9fa;
+  background: #dae0e5;
 }
 
 .table-news tr {
   height: 40px;
+}
+
+.table-news tr:nth-child(3n) {
+  background: #f8f9fa;
 }
 
 .table-news tr td:first-child {

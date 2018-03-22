@@ -5013,11 +5013,6 @@ main textarea {
   height: 60vh;
 }
 
-main label {
-  font-weight: bold;
-  font-size: 18px;
-}
-
 table {
   width: 100%;
   margin-left: 10px;
@@ -5086,6 +5081,49 @@ table {
 .table-news td.table-item-action .action-btn:hover {
   background: #626d78;
   cursor: pointer;
+}
+
+.element-title {
+  margin-top: 20px;
+}
+
+input[type=file] {
+  display: none;
+}
+
+.select-image {
+  width: 100%;
+  text-align: center;
+  background: #343a40;
+  color: #fff;
+  line-height: 40px;
+  border-radius: 3px;
+  transition: .2s;
+}
+
+.select-image:hover {
+  background: #4b545c;
+  cursor: pointer;
+}
+
+.select-image i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.preview-news-image {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.preview-news-image img {
+  height: 100%;
 }
 
 /*==========  user style  ==========*/

@@ -90,9 +90,6 @@ main
 		padding: 5px 10px
 	textarea
 		height: 60vh
-	label
-		font-weight: bold
-		font-size: 18px
 
 table
 	width: 100%
@@ -139,8 +136,35 @@ table
 				background: lighten($bg-dark, 20%)
 				cursor: pointer
 
-		
-
+.element-title
+	margin-top: 20px
+input[type=file]
+	display: none
+.select-image
+	width: 100%
+	text-align: center
+	background: $bg-dark
+	color: #fff
+	line-height: 40px
+	border-radius: 3px
+	transition: .2s
+	&:hover
+		background: lighten($bg-dark, 10%)
+		cursor: pointer
+	i
+		font-size: 20px
+		margin-right: 10px
+.preview-news-image
+	width: 100%
+	overflow: hidden
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 180px
+	border-radius: 3px	
+	border: 1px solid $border-color
+	img
+		height: 100%
 
 
 /*==========  user style  ==========*/

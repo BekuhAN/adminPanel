@@ -33,21 +33,32 @@
 			<main class="col-10">
 				<div class="row">
 					<div class="col-12">
-						<label for="add-news-title">Заголовок</label><br>
+						<h2>Добавить новость</h2>
+						<h3 class="element-title">Заголовок</h3>
 						<input type="text" name="add-news-title">
 					</div>
 
 					<div class="col-9">
-						<label for="add-news-content">Контент</label><br>
+						<h3 class="element-title">Контент</h3>
 						<textarea type="text" name="add-news-content"></textarea>
 					</div>
 					<div class="col-3">
-						<label for="add-news-category">Категория</label><br>
+						<h3 class="element-title">Категория</h3>
 						<select class="task-bar-item" name="add-news-category" id="">
 							<option value="1">Все</option>
 							<option value="2">Главные новости</option>
 							<option value="3">Анонсы</option>
 						</select>
+						
+						<h3 class="element-title">Дата публикации</h3>
+						<input type="datetime-local" name="add-news-date">
+
+						<h3 class="element-title">Изображение</h3>
+						<label class="select-image" for="add-news-image"><i class="fa fa-paperclip"></i>Выбрать изображение
+						<input type="file" name="add-news-image" id="add-news-image"></label>
+						<div class="preview-news-image">
+							<img src="img/preview.jpg">
+						</div>
 					</div>
 				</div>
 			</main>			

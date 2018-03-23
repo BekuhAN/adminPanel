@@ -4892,6 +4892,10 @@ html {
   outline: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 body {
   font-family: roboto-example, sans-serif;
   color: #333;
@@ -4903,6 +4907,9 @@ body {
   padding: 0 15px;
   align-items: center;
   height: 7vh;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
 .header-menu a {
@@ -4925,6 +4932,10 @@ body {
 }
 
 .main-menu {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 7vh;
   background: #f8f9fa;
   height: 93vh;
   padding: 15px 0 0;
@@ -4958,6 +4969,8 @@ body {
 }
 
 main {
+  margin-top: 7vh;
+  margin-left: auto;
   padding: 30px 0;
 }
 
@@ -4968,6 +4981,7 @@ main .row {
 main .task-bar {
   display: flex;
   height: 40px;
+  margin-top: 30px;
 }
 
 main .task-bar-item {
@@ -5010,63 +5024,62 @@ main input, main textarea {
 }
 
 main textarea {
-  height: 60vh;
+  height: 90%;
 }
 
 table {
   width: 100%;
-  margin-left: 10px;
   margin-top: 30px;
 }
 
-.table-news td {
+td {
   padding: 15px 0;
 }
 
-.table-news th {
+th {
   background: #dae0e5;
 }
 
-.table-news tr {
+tr {
   height: 40px;
 }
 
-.table-news tr:nth-child(3n) {
+tr:nth-child(3n) {
   background: #f8f9fa;
 }
 
-.table-news tr td:first-child {
+tr td:first-child {
   text-align: center;
 }
 
-.table-news .table-item-select {
+.table-item-select {
   width: 40px;
   text-align: center;
 }
 
-.table-news .table-item-category {
+.table-item-category {
   width: 180px;
 }
 
-.table-news .table-item-date {
+.table-item-date {
   width: 100px;
 }
 
-.table-news .table-item-id {
+.table-item-id {
   width: 80px;
 }
 
-.table-news .table-item-action {
+.table-item-action {
   width: 120px;
 }
 
-.table-news td.table-item-action {
+td.table-item-action {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.table-news td.table-item-action .action-btn {
+td.table-item-action .action-btn {
   display: flex;
   width: 30px;
   height: 30px;
@@ -5078,7 +5091,7 @@ table {
   margin-right: 10px;
 }
 
-.table-news td.table-item-action .action-btn:hover {
+td.table-item-action .action-btn:hover {
   background: #626d78;
   cursor: pointer;
 }
@@ -5124,6 +5137,19 @@ input[type=file] {
 
 .preview-news-image img {
   height: 100%;
+}
+
+.save-news,
+.new-category {
+  margin-top: 30px;
+  background: #343a40;
+  color: #fff;
+}
+
+.save-news:hover,
+  .new-category:hover {
+  background: #4b545c;
+  cursor: pointer;
 }
 
 /*==========  user style  ==========*/

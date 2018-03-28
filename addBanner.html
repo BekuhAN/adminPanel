@@ -33,36 +33,34 @@
 			<main class="col-10">
 				<div class="row">
 					<div class="col-12">
-						<h2>Добавить новость</h2>
-						<h3 class="element-title">Заголовок</h3>
-						<input type="text" name="add-news-title">
+						<h2>Добавить баннер</h2>
 					</div>
 
-					<div class="col-9">
-						<h3 class="element-title">Контент</h3>
-						<textarea type="text" name="add-news-content"></textarea>
-					</div>
-					<div class="col-3">
-						<h3 class="element-title">Категория</h3>
-						<select class="task-bar-item" name="add-news-category" id="">
-							<option value="1">Все</option>
-							<option value="2">Главные новости</option>
-							<option value="3">Анонсы</option>
+					<div class="col-5">
+						<h3 class="element-title">Расположение</h3>
+						<select class="task-bar-item" name="add-banner-position" id="">
+							<option value="1">Справа(250х400)</option>
+							<option value="2">В шапке(288х186)</option>
+							<option value="3">В шапке(135х92)</option>
+							<option value="2">В шапке(Во всю ширину)</option>
 						</select>
 						
-						<h3 class="element-title">Дата публикации</h3>
-						<input type="datetime-local" name="add-news-date">
+						<h3 class="element-title">Дата начала</h3>
+						<input type="datetime-local" name="add-banner-date">
 						
-						<h3 class="element-title">Источник</h3>
-						<input type="text" name="add-news-source">
+						<h3 class="element-title">Дата оканчания</h3>
+						<input type="datetime-local" name="add-banner-finishing-date">
+						
+						<input class="save-banner" type="submit" value="Добавить">
+					</div>
+					<div class="col-7">
 
 						<h3 class="element-title">Изображение</h3>
-						<label class="select-image" for="add-news-image"><i class="fa fa-paperclip"></i>Выбрать изображение
-						<input type="file" name="add-news-image" id="add-news-image"></label>
-						<div class="preview-news-image">
-							<img src="img/preview.jpg">
+						<label class="select-image" for="add-banner-image"><i class="fa fa-paperclip"></i>Выбрать изображение
+						<input type="file" name="add-banner-image" id="add-banner-image"></label>
+						<div class="preview-banner-image">
+							<img src="img/banner-2.gif">
 						</div>
-						<input class="save-news" type="submit" value="Сохранить">
 					</div>
 				</div>
 			</main>			

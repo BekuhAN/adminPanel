@@ -93,7 +93,8 @@ main
 		border-radius: 3px
 		border-color: $border-color
 		color: #444
-		&[name=add-news-category]
+		&[name=add-news-category],
+		&[name=add-banner-position]
 			width: 100%
 			height: 40px
 	input, textarea
@@ -118,12 +119,16 @@ tr
 		background: $bg-light
 	td:first-child
 		text-align: center
+.table-item-img
+	img
+		width: 100px
 .table-item-select
 	width: 40px
 	text-align: center
 .table-item-category
 	width: 180px
-.table-item-date
+.table-item-date,
+.table-item-finishing-date
 	width: 100px
 .table-item-id
 	width: 80px
@@ -165,7 +170,8 @@ input[type=file]
 	i
 		font-size: 20px
 		margin-right: 10px
-.preview-news-image
+.preview-news-image,
+.preview-banner-image
 	width: 100%
 	overflow: hidden
 	display: flex
@@ -176,8 +182,13 @@ input[type=file]
 	border: 1px solid $border-color
 	img
 		height: 100%
+.preview-banner-image
+	width: 250px
+	height: 400px
+	margin: 0 auto
 
 .save-news,
+.save-banner,
 .new-category
 	margin-top: 30px
 	background: $bg-dark
